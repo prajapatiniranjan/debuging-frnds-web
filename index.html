@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section with Slider</title>
+    <link rel="stylesheet" href="/stye.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="top-bar">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTQuODMgNzQuNzkiPjxkZWZzPjxzdHlsZT4uYntmaWxsOiM4MzI3Mjk7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJiIiBkPSJNMzguNzksNy41NWMtLjYyLTIuOTEsMS4zMi01LjU2LDQuMTUtNS41Nmg3Ljk1YzIuMTIsLjA5LDQuNzctMS41OSw0Ljc3LTEuNTlWMTMuNzNjMCwxMy41MS03LjQyLDE5LjI0LTEwLjg2LDE5Ljc3LS42MiwuMjctMS4wNiwuMDktLjI2LS41Myw0LjY4LTMsNy40Mi0xMC4xNSw3LjY4LTE2LjI0VjQuNTVjLS45NywuNjItMi44MiwuNzEtMi44MiwuNzFoLTYuOTdjLTEuODUsMC0yLjgyLC42Mi0zLjYyLDIuMjltMzUuNTgsMGMuNjItMi45MS0xLjI0LTUuNTYtNC4xNS01LjU2aC03Ljk1Yy0yLjAzLC4wOS00Ljc3LTEuNTktNC43Ny0xLjU5VjEzLjczYzAsMTMuNTEsNy40MiwxOS4yNCwxMC44NiwxOS43NywuNjIsLjI3LDEuMDYsLjA5LC4yNy0uNTMtNC42OC0zLTcuNDItMTAuMTUtNy42OC0xNi4yNFY0LjU1Yy45NywuNjIsMi44MiwuNzEsMi44MiwuNzFoNy4wNmMxLjg1LDAsMi44MywuNjIsMy41MywyLjI5aDBaTTIwLjI2LDYyLjk5Yy0uNzEtMS43Ny0uMTgtMy43MSwuMjYtNC40MWg4LjAzdjQuNDFoMi4wM3YtMTkuNTFzLS42Mi0uMDktMS4wNiwuNjJjLTMsNC43Ny01LjMsNi04LjY1LDkuMzYtMi44MywyLjgyLTQuOTQsNi0zLjg5LDkuNTNoMy4yN1ptLjg4LTUuNzRoNy40MnYtOC4zOWMtMS44NSwzLjQ0LTYuMjcsNS4zLTcuNDIsOC4zOVptODQuOTMtMTUuOGMtMi41NiwyLjAzLTQuNjgsMy44LTUuODMsNi40NC0xLjI0LDIuNjUtMS41OSw2LjQ0LDAsOS43MSwxLjc3LDMuNjIsMy44LDUuNTYsNi4xOCw3Ljk0LDEuNjgsMS44NSw0Ljg2LDUuNTYsMy44LDguODMsLjc5LDAsMS44NS0xLjk0LDIuMDMtMi42NSwuNDQtMi4yOSwuMTgtMy40NC0uNzktNS4xMi0uNjItMS4xNS0xLjk0LTIuMjktMi45MS0zLjQ0LDEuNDEtMS4xNSwyLjkxLTIuODMsNC4xNS00LjUsMS41OS0yLjIxLDIuNTYtNS45MSwuNTMtOS41My0xLjg1LTMuNDQtNy4wNi02LjYyLTcuMTUtNy42OGgwWm0xLjA2LDIwLjM5Yy0yLjAzLTEuNjgtMy4yNy0zLjA5LTQuNS01LjgzLTEuMjQtMi40Ny0xLjMyLTUuMzktLjc5LTcuNDIsLjYyLTIuMjEsMi4xMi0zLjgsMy41My00Ljk0LDEuNTksMS4xNSwzLjI3LDIuNTYsNC41LDQuNTksMi4wMywzLjQ0LDIuMDMsNS45MSwuNzEsOS4yNy0uNzksMS45NC0xLjY4LDMuMDktMy40NCw0LjMzaDBaTS41Nyw0NS4wN2MtLjM1LS43MSwuMTgtMi41NiwyLjMtMi4zOEgxMy4yOGMxLjMyLC4wOSwyLjEyLS44OCwzLjgtLjcxLTIuMzgsMS45NC0yLjY1LDIuOTEtMy4wOSw0Ljc3bC0xLjY4LDEzLjY4Yy0uNDQsNS41NiwxLjE1LDEwLjE1LDUuMywxMy45NS0yLjU2LC4zNS04LjEyLTMuNzEtOC4zLTExLjEyLS4xOC0zLjcxLC44OC0xNS41NCwuODgtMTUuNTQsLjI2LTEuOTQsMS41LTMuMzUsMS41LTMuMzVIMS44Yy0uNjIsLjA5LS45NywuMDktMS4yNCwuNzFILjU3Wm04MS44NCwxNy4zOWgyLjU2di01LjIxaDYuOTd2NS40N2gyLjY1di0xOC44OWgtMi42NXYxMS45MmgtNi45N3YtMTEuOTJoLTIuNTZ2MTguNjNoMFptLTcuMTUtMTQuMjFjLS42MiwuMTgtMS4yNC0uMDktMS44NS0uNjItLjg4LS43OS0xLjI0LTEuNTktMi4zOC0yLjI5LTEuMjQtLjYyLTMtLjcxLTQuMDYsLjA5LS45NywuNzEtLjk3LDIuMywuMDksMy4xOCwyLjAzLDEuNTksNC4yNCwyLjQ3LDYuOCwzLjgsNC42OCwyLjQ3LDUuNDcsNi44LDIuMjEsOS0yLjc0LDEuODUtNi4xOCwyLjAzLTkuMjcsLjg4LTIuMzgtLjk3LTQuMjQtMi45MS00LjUtNS4zLDEuNTksMCwyLjEyLC43MSwyLjc0LDEuNjgsLjk3LDEuMzIsMS41OSwxLjg1LDMsMi40NywyLjAzLC43OSw0LjMzLC41Myw1LjY1LS4yNiwxLjk0LTEuMjQsMS42OC0zLjI3LC4yNi00LjU5LTIuOTEtMi43NC02LjUzLTMuNTMtOC41Ni01LjU2LTEuNzctMS43Ny0yLjM4LTMuNzEtLjUzLTUuNzQsMS41OS0xLjY4LDUuODMtMi4yMSw4LjMtLjA5LDEuMDYsLjk3LDEuODUsMi4xMiwyLjEyLDMuMzVoMFptLTIxLjEtMTAuMDZjMC0xLjQxLDEuMDYtMi40NywyLjQ3LTIuNDcsMS4yNCwwLDIuMzgsMS4wNiwyLjM4LDIuNDcsMCwxLjMyLTEuMTUsMi40Ny0yLjM4LDIuNDctMS40MSwwLTIuNDctMS4xNS0yLjQ3LTIuNDdabTEuMTUsNS42NWgyLjQ3djE5LjE2aC0yLjQ3di0xOS4xNlptLTE5LjI1LDE5LjE2aDEuNzd2LTEzLjE1Yy44OCwyLjU2LDUuMjEsNS45Miw1LjIxLDUuOTIsMCwwLDMuMzUsMi44Myw0Ljk0LDYuNzFsMS4wNiwuNTN2LTE5LjE2aC0xLjc3djEzLjQyYy0uOTctMi41Ni00Ljc3LTUuNTYtNC43Ny01LjU2LTIuOTEtMi41Ni00Ljg2LTYuMDktNS4zLTcuNzdsLTEuMTUtLjM1djE5LjQyaDBaIi8+PC9zdmc+"
+                alt="Tanishq Logo" class="logo">
+            <input type="text" placeholder="Search for Gold Jewellery, Diamond Jewellery and more..."
+                class="search-bar">
+            <div class="header-icons">
+                <a href="#">Festive</a>
+                <a href="#">Stores</a>
+                <a href="#">Account</a>
+                <a href="#">Wishlist</a>
+                <a href="#" class="cart-icon">Cart</a>
+            </div>
+        </div>
+    </header>
+    <header> <nav class="navbar">
+            <a href="#">All Jewellery</a>
+            <a href="#">Gold</a>
+            <a href="#">Diamond</a>
+            <a href="#">Earrings</a>
+            <a href="#">Rings</a>
+            <a href="#">Digital Gold</a>
+            <a href="#">MIA</a>
+            <a href="#">Collections</a>
+            <a href="#">Wedding</a>
+            <a href="#">Gifting</a>
+            <a href="#">Golden Harvest</a>
+            <a href="#">More</a>
+        </nav></header>
+       
+
+    <!-- Hero Section with Slider -->
+<div class="hero">
+    <div class="slider">
+        <!-- Radio buttons for controlling the slides -->
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+
+        <div class="slides">
+            <div class="slide">
+                <img src="/slider images/new-arrivals-desktop.webp" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="/slider images/rivaah-tt-launch-desktop.webp" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="/slider images/rwj-desktop.webp" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="/slider images/sos-desktop-new.jpg" alt="Image 4">
+            </div>
+        </div>
+
+        <!-- Labels for radio buttons -->
+        <label for="slide1"></label>
+        <label for= "slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+    </div>
+</div>
+
+
+<section class="rings-section">
+    <div class="rings-content">
+        <h2>Rings to Cherish Forever</h2>
+        <p>Discover the beauty and elegance of our exclusive ring collection. Perfect for every occasion, each piece
+            tells a story.</p>
+        <div class="rings-images">
+            <img src="ring1.jpg" alt="Ring 1">
+            <img src="ring2.jpg" alt="Ring 2">
+            <img src="ring3.jpg" alt="Ring 3">
+        </div>
+        <a href="#" class="shop-now-btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- First Card Section -->
+<div class="container">
+    <div class="card">
+        <img src="/images/503822FHVAE09_1.webp" alt="Diamond Engagement Ring">
+        <h3>Diamond Engagement Rings</h3>
+        <button class="explore" onclick="moveExplore(this)">Explore More ></button>
+    </div>
+    <div class="card">
+        <img src="/images/503822FHVAE09_1.webp" alt="Solitaire">
+        <h3>Solitaire</h3>
+        <button class="explore" onclick="moveExplore(this)">Explore More ></button>
+    </div>
+    <div class="card">
+        <img src="/images/51D3B4YDLAA00_1.webp" alt="Engagement Rings">
+        <h3>Engagement Rings</h3>
+        <button class="explore" onclick="moveExplore(this)">Explore More ></button>
+    </div>
+</div>
+
+<!-- Jewellery Finds Section -->
+<div class="jewellary-finds">
+    <h1>Your Perfect Jewellery Finds</h1>
+    <p>Shop pieces curated to your style and preferences</p>
+</div>
+<img class="design" src="/images/Line-Design.svg" alt="">
+
+<!-- Jewellery Items -->
+<div class="finds">
+    <div class="jwl">
+        <img src="/images/51D2BIVIB2A00_1.webp" alt="">
+        <h2>Greek Key Pattern Gold Bangles</h2>
+        <p>427669</p>
+    </div>
+    <div class="jwl">
+        <img src="/images/503822FHVAE09_1.webp" alt=" ">
+        <h2>Halo Spark Diamond Finger ring</h2>
+        <p>136369</p>
+    </div>
+    <div class="jwl">
+        <img src="/images/515060SFGABAP5_1.webp" alt=" ">
+        <h2>Elegant open polki stud earrings</h2>
+        <p>48589</p>
+    </div>
+    <div class="jwl">
+        <img src="/images/51D2BIVIB2A00_1.webp" alt=" ">
+        <h2>Gold Studded Bangles</h2>
+        <p>427669</p>
+    </div>
+</div>
+
+<!-- Shop by Category Section -->
+<div class="shop-headings">
+    <h1>Shop By Category</h1>
+    <p>Browse through your favorite categories. We've got them all!</p>
+</div>
+<img class="design" src="/images/Line-Design.svg" alt="">
+
+<div class="shop-container">
+    <div class="cardd">
+        <img src="/images/festive-mangalsutra.webp" alt="Mangalsutras">
+        <h3>Mangalsutras</h3>
+        <a href="#">Explore &rarr;</a>
+    </div>
+    <div class="cardd">
+        <img src="/images/festive-engagement-ring.webp" alt="Engagement Rings">
+        <h3>Engagement Rings</h3>
+        <a href="#">Explore &rarr;</a>
+    </div>
+    <div class="cardd">
+        <img src="/images/festive-diamond-necklace.webp" alt="Necklaces">
+        <h3>Necklaces</h3>
+        <a href="#">Explore &rarr;</a>
+    </div>
+    <div class="cardd">
+        <img src="/images/festive-earrings.webp" alt="Earrings">
+        <h3>Earrings</h3>
+        <a href="#">Explore &rarr;</a>
+    </div>
+</div>
+
+<!-- Rivaah Section -->
+<div class="main-section">
+    <div class="image-section">
+        <img src="/images/Rivaah-Bride.jpg" alt="Wedding Jewellery">
+    </div>
+    <div class="text-section">
+        <h1>Tanishq Presents</h1>
+        <h2>RIVAĀH Wedding Jewellery</h2>
+        <p>Stunning wedding jewellery crafted to celebrate the glory of every Indian bride.</p>
+        <div class="buttons">
+            <button class="btn arrange">Arrange a Callback</button>
+            <button class="btn explore">Explore Now</button>
+        </div>
+    </div>
+</div>
+
+<!-- Jewellery Guides Section -->
+<h3>Jewellery Guides</h3>
+<p>Check out our ready-made guides to make your buying process easier.</p>
+<img class="design" src="/images/Line-Design.svg" alt="">
+
+<div class="guide-container">
+    <div class="guide-ring">
+        <img src="/images/festive-ring.webp" alt="festive-ring">
+        <a class="guide-btn" href="#"> Explore Blog</a>
+    </div>
+    <div class="guide-ring">
+        <img src="/images/festive-earrings.webp" alt="festive-earrings">
+        <a class="guide-btn" href="#"> Explore Blog</a>
+    </div>
+    <div class="guide-ring">
+        <img src="/images/festive-necklaces.webp" alt="festive-necklaces">
+        <a class="guide-btn" href="#"> Explore Blog</a>
+    </div>
+</div>
+
+<!-- Footer Section --><footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>About Us</h4>
+            <p>We are a leading company in the industry, offering a wide range of products and services.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p>Email: info@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

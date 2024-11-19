@@ -1,0 +1,374 @@
+* {
+  color: #832729;
+}
+
+/* General Reset */
+body, h1, h2, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+.header {
+  background-color: #f8f5f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.header-icons a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.cart-icon {
+  color: red;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #832729;
+  font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  animation: auto-slide 56s infinit56
+}
+
+.slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100%;
+  height: %;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #832729;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text .shop-now {
+  padding: 10px 20px;
+  background-color: #b71c1c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+/* Slider Animation */
+@keyframes auto-slide {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+}
+
+/* Hide the radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Control the images with the checked state of the radio buttons */
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+
+.main-banner {
+    background-image: url('/path/to/banner-image.jpg'); /* Replace with actual banner image */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    color: white;
+    text-align: center; /* Centers the text */
+    padding: 20px;
+}
+
+.main-banner h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.main-banner .btn {
+    background-color: #f1c40f;
+    color: #0c0c0c;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.main-banner .btn:hover {
+    background-color: #e67e22;
+}
+h1, h2, h3, p {
+    text-align: center;  /* Centers the text horizontally */
+    margin: 0 auto;      /* Ensures proper centering */
+}
+  
+h1, h2, h3, p {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h1 img, h2 img, h3 img, p img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  width: 80%; /* Adjust the width to your preference */
+}
+
+/* Optional styling for the labels */
+label {
+  position: absolute;
+  top: -9999px; /* Hide the radio buttons visually */
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.product-card .explore-btn {
+    background-color: #f1c40f;
+    color: #0c0c0c;
+    padding: 8px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.product-card .explore-btn:hover {
+    background-color: #e67e22;
+}
+
+
+footer {
+  background-color: #efe3e3;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 16px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  max-width: 250px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #413d3d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ffd700; /* Golden color on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-banner h1 {
+        font-size: 36px;
+    }
+
+    .main-banner p {
+        font-size: 16px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-banner h1 {
+        font-size: 28px;
+    }
+
+    .product-cards {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
